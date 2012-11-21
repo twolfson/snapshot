@@ -25,8 +25,11 @@
 
         // Expand it out to 100%
         // TODO: Expand even bigger?
-        iframe.height = 700;
-        iframe.width = 700;
+        iframe.height = window.innerHeight;
+        iframe.width = window.innerWidth;
+
+        // Hide the image for flicker
+        iframe.style.cssText = 'display: none;';
 
         // Append the iframe to the DOM
         body.appendChild(iframe);
