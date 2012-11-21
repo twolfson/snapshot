@@ -28,6 +28,9 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies": {
+    "iframe2image": "~0.1.0"
+  },
   "devDependencies": {
     "grunt": "~0.3.17"
   },
@@ -40,8 +43,5 @@
     "picture",
     "polaroid",
     "capture"
-  ],
-  "dependencies": {
-    "iframe2image": "~0.1.0"
-  }
+  ]
 }
