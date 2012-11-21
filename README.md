@@ -1,38 +1,38 @@
-# snapshot
+# stillframe
 
-Take a snapshot of a URL
+Take a snapshot of a URL in the browser
 
 ## Getting Started
 ### On the server
-Install the module with: `npm install snapshot`
+Install the module with: `npm install stillframe`
 
 ```javascript
-var snapshot = require('snapshot');
-snapshot.awesome(); // "awesome"
+var stillframe = require('stillframe');
+stillframe.awesome(); // "awesome"
 ```
 
 ### In the browser
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/twolfson/snapshot/master/dist/snapshot.min.js
-[max]: https://raw.github.com/twolfson/snapshot/master/dist/snapshot.js
+[min]: https://raw.github.com/twolfson/stillframe/master/dist/stillframe.min.js
+[max]: https://raw.github.com/twolfson/stillframe/master/dist/stillframe.js
 
 In your web page:
 
 ```html
-<script src="dist/snapshot.min.js"></script>
+<script src="dist/stillframe.min.js"></script>
 <script>
 awesome(); // "awesome"
 </script>
 ```
 
-In your code, you can attach snapshot's methods to any object.
+In your code, you can attach stillframe's methods to any object.
 
 ```html
 <script>
 this.exports = Bocoup.utils;
 </script>
-<script src="dist/snapshot.min.js"></script>
+<script src="dist/stillframe.min.js"></script>
 <script>
 Bocoup.utils.awesome(); // "awesome"
 </script>

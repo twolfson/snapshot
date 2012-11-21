@@ -1,8 +1,8 @@
 {
-  "name": "snapshot",
-  "description": "Take a snapshot of a URL",
+  "name": "stillframe",
+  "description": "Take a snapshot of a URL in the browser",
   "version": "0.1.0",
-  "homepage": "https://github.com/twolfson/snapshot",
+  "homepage": "https://github.com/twolfson/stillframe",
   "author": {
     "name": "Todd Wolfson",
     "email": "todd@twolfson.com",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/twolfson/snapshot.git"
+    "url": "git://github.com/twolfson/stillframe.git"
   },
   "bugs": {
-    "url": "https://github.com/twolfson/snapshot/issues"
+    "url": "https://github.com/twolfson/stillframe/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/twolfson/snapshot/blob/master/LICENSE-MIT"
+      "url": "https://github.com/twolfson/stillframe/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/snapshot",
+  "main": "lib/stillframe",
   "engines": {
     "node": "*"
   },
@@ -39,6 +39,7 @@
     "image",
     "url",
     "snapshot",
+    "stillframe",
     "uri",
     "picture",
     "polaroid",
