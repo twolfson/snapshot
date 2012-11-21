@@ -1,6 +1,11 @@
+/*jslint node: true*/
+var path = require('path');
 module.exports = function(grunt) {
 
   // Project configuration.
+  var iframe2imagePath = require.resolve('iframe2image'),
+      iframe2imageDir = path.dirname(iframe2imagePath),
+      iframe2imageConcat = path.join(iframe2imageDir, '../dist/iframe2image.withdomvas.js');
   grunt.initConfig({
     pkg: '<json:package.json>',
     meta: {
@@ -14,12 +19,20 @@ module.exports = function(grunt) {
       dist: {
         src: ['<banner:meta.banner>', '<file_strip_banner:lib/<%= pkg.name %>.js>'],
         dest: 'dist/<%= pkg.name %>.js'
+      },
+      distWithDeps: {
+        src: ['<banner:meta.banner>', iframe2imageConcat, '<file_strip_banner:lib/<%= pkg.name %>.js>'],
+        dest: 'dist/<%= pkg.name %>.withDeps.js'
       }
     },
     min: {
       dist: {
         src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],
         dest: 'dist/<%= pkg.name %>.min.js'
+      },
+      distWithDeps: {
+        src: ['<banner:meta.banner>', '<config:concat.distWithDeps.dest>'],
+        dest: 'dist/<%= pkg.name %>.withDeps.min.js'
       }
     },
     test: {
@@ -43,11 +56,15 @@ module.exports = function(grunt) {
         sub: true,
         undef: true,
         boss: true,
-        eqnull: true
+        eqnull: true,
+
+        strict: false,
+        browser: true
       },
       globals: {
         exports: true,
-        module: false
+        module: false,
+        iframe2image: true
       }
     },
     uglify: {}
