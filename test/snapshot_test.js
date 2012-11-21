@@ -1,5 +1,5 @@
 /*global require:true */
-var kaleidoscope = require('../lib/kaleidoscope.js');
+var snapshot = require('../lib/snapshot.js');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -29,7 +29,7 @@ exports['awesome'] = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(kaleidoscope.awesome(), 'awesome', 'should be awesome.');
+    test.equal(snapshot.awesome(), 'awesome', 'should be awesome.');
     test.done();
   }
 };

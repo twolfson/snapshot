@@ -1,8 +1,8 @@
 {
-  "name": "kaleidoscope",
-  "description": "View multiple pages at the same time",
+  "name": "snapshot",
+  "description": "Take a snapshot of a URL",
   "version": "0.1.0",
-  "homepage": "https://github.com/twolfson/kaleidoscope",
+  "homepage": "https://github.com/twolfson/snapshot",
   "author": {
     "name": "Todd Wolfson",
     "email": "todd@twolfson.com",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/twolfson/kaleidoscope.git"
+    "url": "git://github.com/twolfson/snapshot.git"
   },
   "bugs": {
-    "url": "https://github.com/twolfson/kaleidoscope/issues"
+    "url": "https://github.com/twolfson/snapshot/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/twolfson/kaleidoscope/blob/master/LICENSE-MIT"
+      "url": "https://github.com/twolfson/snapshot/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/kaleidoscope",
+  "main": "lib/snapshot",
   "engines": {
     "node": "*"
   },
