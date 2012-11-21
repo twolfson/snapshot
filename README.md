@@ -4,7 +4,7 @@ Take a snapshot of a URL
 
 ## Getting Started
 ### On the server
-Install the module with: `npm install snapshot`
+Install the module with: `npm install snapshot.js`
 
 ```javascript
 var snapshot = require('snapshot');

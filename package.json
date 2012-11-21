@@ -1,5 +1,5 @@
 {
-  "name": "snapshot",
+  "name": "snapshot.js",
   "description": "Take a snapshot of a URL",
   "version": "0.1.0",
   "homepage": "https://github.com/twolfson/snapshot",
